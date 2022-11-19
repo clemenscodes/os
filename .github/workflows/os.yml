@@ -19,7 +19,7 @@ jobs:
                 os: [ubuntu-latest]
                 include:
                     - os: ubuntu-latest
-                      target: x86_64-os.json
+                      target: x86_64-os
         steps:
             - name: Checkout
               uses: actions/checkout@v3
