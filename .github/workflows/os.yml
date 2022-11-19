@@ -36,7 +36,6 @@ jobs:
             - name: Install Rust Toolchain
               uses: dtolnay/rust-toolchain@nightly
               with:
-                  target: ${{ matrix.target }}
                   components: rustfmt, clippy, rust-src, llvm-tools-preview
             - name: Format
               run: cargo fmt --all -- --check
